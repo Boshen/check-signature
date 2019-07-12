@@ -53,7 +53,7 @@ router.post('/api/sign', (ctx) => {
  */
 router.post('/api/check', (ctx) => {
   const signature = ctx.request.headers['agora-signature']
-  const rawBody = ctx.request['rawBody']
+  const rawBody = ctx.request['rawBody'] // 获取原始 body, 是一个字符串
   const signed = sign(rawBody)
   console.log('/api/check rawBody: ' + rawBody)
   console.log('/api/check signature ' + signature)
