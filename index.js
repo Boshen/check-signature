@@ -40,9 +40,9 @@ router.post('/api/sign', (ctx) => {
   request({
     method: 'POST',
     uri: 'http://localhost:4000/api/check',
-    json: true,
-    body,
+    body: rawBody,
     headers: {
+      'Content-type': 'application/json',
       'Agora-Signature': signature,
     }
   })
