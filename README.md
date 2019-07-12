@@ -1,9 +1,12 @@
-# Check Signature
+# 验证签名
 
 ```
 npm install
 node index.js
 ```
+
+## 查看代码
+[index.js](./index.js)
 
 ## 测试用例
 ```
